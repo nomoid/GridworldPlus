@@ -23,3 +23,4 @@ drag_margin_v_enabled = false
 margin_top = 1.29199
 margin_bottom = 1.29199
 rect_scale = Vector2( 1.5, 1.5 )
+player = NodePath("../../Player")
