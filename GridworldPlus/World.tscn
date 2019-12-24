@@ -1,13 +1,25 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://World.gd" type="Script" id=1]
 [ext_resource path="res://Tile.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PlayerUI.tscn" type="PackedScene" id=4]
 
 [node name="World" type="Node2D"]
 script = ExtResource( 1 )
 Tile = ExtResource( 2 )
 
+[node name="Player" parent="." instance=ExtResource( 3 )]
+z_index = 1
+
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
 drag_margin_h_enabled = false
 drag_margin_v_enabled = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="PlayerUI" parent="CanvasLayer" instance=ExtResource( 4 )]
+margin_top = 1.29199
+margin_bottom = 1.29199
+rect_scale = Vector2( 1.5, 1.5 )

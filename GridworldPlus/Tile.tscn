@@ -2,34 +2,34 @@
 
 [ext_resource path="res://Tile.gd" type="Script" id=1]
 [ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_05.PNG" type="Texture" id=2]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_04.PNG" type="Texture" id=3]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_03.PNG" type="Texture" id=4]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_06.PNG" type="Texture" id=5]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_03.PNG" type="Texture" id=3]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_06.PNG" type="Texture" id=4]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_04.PNG" type="Texture" id=5]
 [ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_25.PNG" type="Texture" id=6]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_12.PNG" type="Texture" id=7]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_10.PNG" type="Texture" id=8]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_09.PNG" type="Texture" id=9]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_08.PNG" type="Texture" id=10]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_17.PNG" type="Texture" id=11]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_07.PNG" type="Texture" id=7]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_24.PNG" type="Texture" id=8]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_23.PNG" type="Texture" id=9]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_09.PNG" type="Texture" id=10]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_16.PNG" type="Texture" id=11]
 [ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_11.PNG" type="Texture" id=12]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_16.PNG" type="Texture" id=13]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_14.PNG" type="Texture" id=14]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_24.PNG" type="Texture" id=15]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_07.PNG" type="Texture" id=16]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_13.PNG" type="Texture" id=17]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_29.PNG" type="Texture" id=18]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_18.PNG" type="Texture" id=19]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_19.PNG" type="Texture" id=20]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_15.PNG" type="Texture" id=21]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_21.PNG" type="Texture" id=13]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_10.PNG" type="Texture" id=14]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_01.png" type="Texture" id=15]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_19.PNG" type="Texture" id=16]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_15.PNG" type="Texture" id=17]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_28.PNG" type="Texture" id=18]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_22.PNG" type="Texture" id=19]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_08.PNG" type="Texture" id=20]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_13.PNG" type="Texture" id=21]
 [ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_20.PNG" type="Texture" id=22]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_22.PNG" type="Texture" id=23]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_30.PNG" type="Texture" id=24]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_01.png" type="Texture" id=25]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_28.PNG" type="Texture" id=26]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_27.PNG" type="Texture" id=27]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_26.PNG" type="Texture" id=28]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_23.PNG" type="Texture" id=29]
-[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_21.PNG" type="Texture" id=30]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_18.PNG" type="Texture" id=23]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_27.PNG" type="Texture" id=24]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_12.PNG" type="Texture" id=25]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_26.PNG" type="Texture" id=26]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_17.PNG" type="Texture" id=27]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_14.PNG" type="Texture" id=28]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_30.PNG" type="Texture" id=29]
+[ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_29.PNG" type="Texture" id=30]
 [ext_resource path="res://assets/tabletopterrain_windows/tabletopterrain/TabletopTerrain_png/TabletopBadges_02.PNG" type="Texture" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -41,17 +41,17 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
-"name": "mountain2",
+"name": "mountain1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
-"name": "mountain1",
+"name": "icymountain1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
-"name": "icymountain1",
+"name": "mountain2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 6 ) ],
@@ -61,27 +61,27 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "forest1",
+"name": "icymountain2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
-"name": "ice2",
+"name": "desertvolcano2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
-"name": "ice1",
+"name": "grass3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
-"name": "icymountain3",
+"name": "ice1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
-"name": "desert4",
+"name": "desert3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 12 ) ],
@@ -91,47 +91,47 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
-"name": "desert3",
+"name": "desertvolcano1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ) ],
 "loop": true,
-"name": "desert1",
+"name": "ice2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
-"name": "desertvolcano2",
+"name": "grass1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
-"name": "icymountain2",
+"name": "desertmountain2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
-"name": "water2",
+"name": "desert2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 18 ) ],
 "loop": true,
-"name": "hill3",
+"name": "hill2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ) ],
 "loop": true,
-"name": "desertmountain1",
+"name": "desertmountain4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 20 ) ],
 "loop": true,
-"name": "desertmountain2",
+"name": "icymountain3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 21 ) ],
 "loop": true,
-"name": "desert2",
+"name": "water2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ) ],
@@ -141,42 +141,42 @@ animations = [ {
 }, {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
-"name": "desertmountain4",
+"name": "desertmountain1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 24 ) ],
 "loop": true,
-"name": "hill4",
+"name": "grass4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ) ],
 "loop": true,
-"name": "grass1",
+"name": "forest1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 26 ) ],
 "loop": true,
-"name": "hill2",
+"name": "grass2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 27 ) ],
 "loop": true,
-"name": "grass4",
+"name": "desert4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 28 ) ],
 "loop": true,
-"name": "grass2",
+"name": "desert1",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 29 ) ],
 "loop": true,
-"name": "grass3",
+"name": "hill4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 30 ) ],
 "loop": true,
-"name": "desertvolcano1",
+"name": "hill3",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 31 ) ],

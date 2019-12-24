@@ -48,7 +48,7 @@ func get_width():
 	
 func get_height():
 	return $Image.transform.get_scale().y * textureHeight
-	
+
 func set_tile(tile):
 	var tile_name = tile
 	if name_map.has(tile):
