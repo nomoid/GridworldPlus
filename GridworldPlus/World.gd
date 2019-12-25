@@ -31,6 +31,7 @@ func _ready():
 		for x in range(len(map[y])):
 			var tile = Tile.instance()
 			tile.position = get_tile_position(x, y)
+			# Set the tile's displayed image according to the map
 			tile.set_tile(map[y][x])
 			add_child(tile)
 
@@ -69,6 +70,7 @@ func can_move(character, x, y):
 	return can_move_to_tile(character, tile)
 
 func can_move_to_tile(character, tile):
+	# Prevent movement to water tiles
 	if tile == "w2":
 		return false
 	return true

@@ -52,7 +52,7 @@ func animate_move(delta):
 
 # Movement
 func move(world, dx, dy):
-	if can_move(world, dx, dy):
+	if can_move(world, x + dx, y + dy):
 		_move_anim(x, y, dx, dy)
 		action = _get_move_cost()
 		x += dx
@@ -66,10 +66,10 @@ func _move_anim(x, y, dx, dy):
 	animateTotalTime = _get_travel_time()
 	animateTimeLeft = _get_travel_time()
 
-func can_move(world, dx, dy):
+func can_move(world, x, y):
 	if action > 0:
 		return false
-	if not world.can_move(self, x + dx, y + dy):
+	if not world.can_move(self, x, y):
 		return false
 	return true
 
