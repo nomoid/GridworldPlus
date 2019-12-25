@@ -13,21 +13,17 @@ func _ready():
 	pass # Replace with function body.
 
 func _process(delta):
-	update_action(delta)
-	animate(delta)
+	_update_action(delta)
+	_animate(delta)
 
-func update_action(delta):
+func _update_action(delta):
 	if action > 0:
 		action -= _get_action_depletion() * delta
 	if action < 0:
 		action = 0
 
-func animate(delta):
-	animate_move(delta)
-	
-func smootherstep(start, end, x):
-  x = clamp((x - start) / (end - start), 0.0, 1.0)
-  return x * x * x * (x * (x * 6 - 15) + 10)
+func _animate(delta):
+	_animate_move(delta)
 
 #Move animation
 var animateStartX = 0
@@ -36,7 +32,7 @@ var animateEndX = 0
 var animateEndY = 0
 var animateTotalTime = 0
 var animateTimeLeft = 0
-func animate_move(delta):
+func _animate_move(delta):
 	if animateTimeLeft < 0:
 		animateTimeLeft = 0
 		displayX = x
@@ -52,13 +48,13 @@ func animate_move(delta):
 
 # Movement
 func move(world, dx, dy):
-	if can_move(world, x + dx, y + dy):
-		_move_anim(x, y, dx, dy)
+	if can_make_move(world, x + dx, y + dy):
+		_start_move_animation(x, y, dx, dy)
 		action = _get_move_cost()
 		x += dx
 		y += dy
 
-func _move_anim(x, y, dx, dy):
+func _start_move_animation(x, y, dx, dy):
 	animateStartX = x
 	animateStartY = y
 	animateEndX = x + dx
@@ -66,7 +62,7 @@ func _move_anim(x, y, dx, dy):
 	animateTotalTime = _get_travel_time()
 	animateTimeLeft = _get_travel_time()
 
-func can_move(world, x, y):
+func can_make_move(world, x, y):
 	if action > 0:
 		return false
 	if not world.can_move(self, x, y):
