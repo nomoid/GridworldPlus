@@ -52,7 +52,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("player_down"):
 		$Player.move(self, 0, 1)
 	# Update player position
-	$Player.position = get_tile_position($Player.x, $Player.y)
+	$Player.position = get_tile_position($Player.displayX, $Player.displayY)
 
 func get_tile_position(x, y):
 	return Vector2(tileWidth * (x + 0.5), tileHeight * (y + 0.5))
