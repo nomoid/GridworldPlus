@@ -45,13 +45,13 @@ func _process(delta):
 	if Input.is_action_pressed("ui_down"):
 		$Camera2D.position += Vector2(0,cameraSpeed) * delta
 	if Input.is_action_just_pressed("player_left"):
-		$Player.move(self, -1, 0)
+		$Player.try_move(self, -1, 0)
 	if Input.is_action_just_pressed("player_right"):
-		$Player.move(self, 1, 0)
+		$Player.try_move(self, 1, 0)
 	if Input.is_action_just_pressed("player_up"):
-		$Player.move(self, 0, -1)
+		$Player.try_move(self, 0, -1)
 	if Input.is_action_just_pressed("player_down"):
-		$Player.move(self, 0, 1)
+		$Player.try_move(self, 0, 1)
 	# Update player position
 	$Player.position = get_tile_position($Player.displayX, $Player.displayY)
 
