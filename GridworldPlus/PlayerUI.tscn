@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://PlayerUI.gd" type="Script" id=1]
+[ext_resource path="res://opensans.tres" type="DynamicFont" id=2]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 0, 0, 1 )
@@ -20,35 +21,48 @@ anchor_bottom = 1.0
 margin_top = 0.291985
 margin_bottom = 0.291992
 script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="HealthBar" type="ProgressBar" parent="."]
-margin_left = 52.0
-margin_top = 1.0
-margin_right = 194.0
-margin_bottom = 15.0
+margin_left = 108.484
+margin_top = 12.5227
+margin_right = 321.293
+margin_bottom = 33.5227
 custom_styles/fg = SubResource( 1 )
 custom_styles/bg = SubResource( 2 )
 value = 30.0
 percent_visible = false
 
 [node name="HealthLabel" type="Label" parent="."]
-margin_right = 40.0
-margin_bottom = 14.0
+margin_left = 6.32619
+margin_top = 0.225937
+margin_right = 99.3262
+margin_bottom = 42.2259
+custom_fonts/font = ExtResource( 2 )
 text = "Health"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="ActionBar" type="ProgressBar" parent="."]
-margin_left = 52.0
-margin_top = 18.292
-margin_right = 194.0
-margin_bottom = 32.292
+margin_left = 108.484
+margin_top = 50.8267
+margin_right = 321.293
+margin_bottom = 71.5347
 custom_styles/fg = SubResource( 3 )
 custom_styles/bg = SubResource( 4 )
 value = 20.0
 percent_visible = false
 
 [node name="ActionLabel" type="Label" parent="."]
-margin_left = 0.291992
-margin_top = 18.6873
-margin_right = 40.292
-margin_bottom = 32.6873
+margin_left = 7.07006
+margin_top = 36.5362
+margin_right = 95.0701
+margin_bottom = 78.5362
+custom_fonts/font = ExtResource( 2 )
 text = "Action"
+__meta__ = {
+"_edit_use_anchors_": false
+}
