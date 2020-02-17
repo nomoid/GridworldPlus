@@ -1,9 +1,5 @@
 extends "res://Entity.gd"
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 const move_cost = 0.5
 const travel_time = 0.5
 const action_depletion = 1.0

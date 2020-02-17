@@ -7,6 +7,8 @@ var y = 0
 var displayX = 0
 var displayY = 0
 
+var world = null
+
 var health = 100
 var action = 0
 
@@ -15,6 +17,9 @@ var _queued_action = null
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
+
+func set_world(new_world):
+	world = new_world
 
 func _process(delta):
 	_update_action(delta)
@@ -28,17 +33,17 @@ func _update_action(delta):
 		action = 0
 
 func _try_queued_action(delta):
-	if action == 0 and _queued_action != null:
-		run_action(_queued_action)
+	if action_available() and _queued_action != null:
+		run_action_force(_queued_action)
 
 func run_action(action_object):
+	if action_available():
+		run_action_force(action_object)
+		
+func run_action_force(action_object):
 	var action_name = action_object[0]
 	var args = action_object[1]
-	match action_name:
-		"Move":
-			_move(args[0], args[1], args[2])
-		_:
-			assert(false)
+	callv(action_name, args)
 	_queued_action = null
 
 func _animate(delta):
@@ -66,18 +71,24 @@ func _animate_move(delta):
 		animateTimeLeft -= delta
 
 # Movement
-func try_move(world, dx, dy):
+func try_move(dx, dy):
 	if action_available():
-		_move(world, dx, dy)
+		_move(dx, dy)
 	elif to_queue_action():
-		_queued_action = ["Move", [world, dx, dy]]
+		_queued_action = ["_move", [dx, dy]]
 
-func _move(world, dx, dy):
-	if can_make_move(world, x + dx, y + dy):
+func _move(dx, dy):
+	if can_make_move(x + dx, y + dy):
 		_start_move_animation(x, y, dx, dy)
 		action = _get_move_cost()
 		x += dx
 		y += dy
+
+func set_pos(new_x, new_y):
+	x = new_x
+	y = new_y
+	displayX = new_x
+	displayY = new_y
 
 func _start_move_animation(x, y, dx, dy):
 	animateStartX = x
@@ -93,7 +104,7 @@ func action_available():
 func to_queue_action():
 	return action < ACTION_QUEUE_DELAY and _queued_action == null
 
-func can_make_move(world, x, y):
+func can_make_move(x, y):
 	if not action_available():
 		return false
 	if not world.can_move(self, x, y):
