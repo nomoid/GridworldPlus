@@ -1,19 +1,14 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://PlayerUI.gd" type="Script" id=1]
 [ext_resource path="res://opensans.tres" type="DynamicFont" id=2]
+[ext_resource path="res://ResourceBar.tscn" type="PackedScene" id=3]
 
 [sub_resource type="StyleBoxFlat" id=1]
 bg_color = Color( 1, 0, 0, 1 )
 
 [sub_resource type="StyleBoxFlat" id=2]
-bg_color = Color( 0, 0, 0, 1 )
-
-[sub_resource type="StyleBoxFlat" id=3]
 bg_color = Color( 1, 1, 0, 1 )
-
-[sub_resource type="StyleBoxFlat" id=4]
-bg_color = Color( 0, 0, 0, 1 )
 
 [node name="PlayerUI" type="Control"]
 anchor_right = 1.0
@@ -25,15 +20,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HealthBar" type="ProgressBar" parent="."]
+[node name="HealthBar" parent="." instance=ExtResource( 3 )]
 margin_left = 108.484
-margin_top = 12.5227
-margin_right = 321.293
-margin_bottom = 33.5227
+margin_top = 12.523
+margin_right = 319.484
+margin_bottom = 33.523
 custom_styles/fg = SubResource( 1 )
-custom_styles/bg = SubResource( 2 )
-value = 30.0
-percent_visible = false
 
 [node name="HealthLabel" type="Label" parent="."]
 margin_left = 6.32619
@@ -45,16 +37,6 @@ text = "Health"
 __meta__ = {
 "_edit_use_anchors_": false
 }
-
-[node name="ActionBar" type="ProgressBar" parent="."]
-margin_left = 108.484
-margin_top = 50.8267
-margin_right = 321.293
-margin_bottom = 71.5347
-custom_styles/fg = SubResource( 3 )
-custom_styles/bg = SubResource( 4 )
-value = 20.0
-percent_visible = false
 
 [node name="ActionLabel" type="Label" parent="."]
 margin_left = 7.07006
@@ -76,3 +58,10 @@ margin_bottom = 54.0
 grow_horizontal = 0
 custom_fonts/font = ExtResource( 2 )
 text = "FPS:"
+
+[node name="ActionBar" parent="." instance=ExtResource( 3 )]
+margin_left = 108.0
+margin_top = 51.0
+margin_right = 320.809
+margin_bottom = 72.0
+custom_styles/fg = SubResource( 2 )

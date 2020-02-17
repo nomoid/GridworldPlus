@@ -4,6 +4,8 @@ const move_cost = 3.1415926
 const travel_time = 0.5
 const action_depletion = 1.0
 
+const full_action = move_cost
+
 var action_list = [
 	["_move", [0, 1]],
 	["_move", [1, 0]],
@@ -16,10 +18,14 @@ func _ready():
 	pass # Replace with function body.
 
 func _process(delta):
+	_update_resource()
 	if action_available():
 		perform_random_action()
-	if $"/root/Global".debug:
-		_debug_label()
+	# if $"/root/Global".debug:
+	#	 _debug_label()
+
+func _update_resource():
+	$ResourceBar.value = action * 100 / full_action
 
 func _debug_label():
 	$DebugLabel.visible = true
