@@ -19,3 +19,9 @@ func _process(delta):
 		var node = get_node(player)
 		$HealthBar.value = node.health * 100 / full_health
 		$ActionBar.value = node.action * 100 / full_action
+	if $"/root/Global".debug:
+		_debug_fps()
+
+func _debug_fps():
+	$FPSLabel.visible = true
+	$FPSLabel.text = "FPS: %f" % Engine.get_frames_per_second()

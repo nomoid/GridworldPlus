@@ -1,6 +1,6 @@
 extends "res://Entity.gd"
 
-const move_cost = 2
+const move_cost = 3.1415926
 const travel_time = 0.5
 const action_depletion = 1.0
 
@@ -18,6 +18,12 @@ func _ready():
 func _process(delta):
 	if action_available():
 		perform_random_action()
+	if $"/root/Global".debug:
+		_debug_label()
+
+func _debug_label():
+	$DebugLabel.visible = true
+	$DebugLabel.text = "Action: %f" % action
 
 func perform_random_action():
 	var ordering = range(len(action_list))

@@ -18,3 +18,14 @@ script = ExtResource( 2 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.188, 0.188 )
 frames = SubResource( 1 )
+
+[node name="DebugLabel" type="Label" parent="."]
+visible = false
+margin_left = -19.0273
+margin_top = -37.638
+margin_right = 20.9727
+margin_bottom = -23.638
+text = "Action:"
+__meta__ = {
+"_edit_use_anchors_": false
+}

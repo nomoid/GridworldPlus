@@ -11,6 +11,7 @@ var world = null
 
 var health = 100
 var action = 0
+var action_rollover = 0
 
 var _queued_action = null
 
@@ -22,14 +23,23 @@ func set_world(new_world):
 	world = new_world
 
 func _process(delta):
-	_update_action(delta)
-	_try_queued_action(delta)
-	_animate(delta)
+	if world.do_process():
+		_update_action(delta)
+		_try_queued_action(delta)
+		_animate(delta)
 
 func _update_action(delta):
 	if action > 0:
 		action -= _get_action_depletion() * delta
 	if action < 0:
+		action_rollover = -action
+		action = 0
+
+func set_action(value):
+	action = value - action_rollover
+	action_rollover = 0
+	if action < 0:
+		action_rollover = -action
 		action = 0
 
 func _try_queued_action(delta):
@@ -80,7 +90,7 @@ func try_move(dx, dy):
 func _move(dx, dy):
 	if can_make_move(x + dx, y + dy):
 		_start_move_animation(x, y, dx, dy)
-		action = _get_move_cost()
+		set_action(_get_move_cost())
 		x += dx
 		y += dy
 

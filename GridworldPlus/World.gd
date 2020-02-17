@@ -23,6 +23,8 @@ const map = [
 
 var entities = []
 
+var do_process_var = true
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Set random seed
@@ -53,6 +55,7 @@ func add_enemy(x, y):
 	add_child(enemy)
 
 func _process(delta):
+	update_do_process()
 	if Input.is_action_pressed("ui_left"):
 		$Camera2D.position -= Vector2(cameraSpeed,0) * delta
 	if Input.is_action_pressed("ui_right"):
@@ -98,3 +101,9 @@ func can_move_to_tile(character, tile):
 	if tile == "w2":
 		return false
 	return true
+
+func update_do_process():
+	do_process_var = !$Player.action_available()
+
+func do_process():
+	return do_process_var
